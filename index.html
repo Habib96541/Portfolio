@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Md. Habib — Game Developer specializing in Unity 2D/3D, C#, AR/VR development. Portfolio showcasing game projects, skills, and experience.">
+  <meta name="keywords" content="game developer, Unity developer, C# developer, AR VR developer, Md Habib, portfolio, game design, indie games">
+  <meta name="author" content="Md. Habib">
+  <meta property="og:title" content="Md. Habib | Game Developer Portfolio">
+  <meta property="og:description" content="Aspiring Game Developer skilled in Unity (2D & 3D), C#, AR/VR. Creating immersive gaming experiences.">
+  <meta property="og:type" content="website">
+  <title>Md. Habib | Game Developer & XR Creator</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ==================== PRELOADER ==================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">HABIB.DEV</div>
+    <div class="preloader-bar-container">
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ==================== CUSTOM CURSOR ==================== -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ==================== PARTICLES CANVAS ==================== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">HABIB.DEV</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active" data-section="home">Home</a>
+        <a href="#about" data-section="about">About</a>
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#projects" data-section="projects">Projects</a>
+        <a href="#experience" data-section="experience">Experience</a>
+        <a href="#education" data-section="education">Education</a>
+        <a href="#contact" class="nav-cta" data-section="contact">Hire Me</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero section" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Currently Working @ Join Venture AI
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Md. Habib</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <h2 class="hero-title">
+            <span class="typed-text" id="typed-text"></span>
+          </h2>
+        </div>
+        <p class="hero-description">
+          Junior Game Developer at Join Venture AI with a B.Sc. in CSE. Currently building 
+          professional games using Unity (2D & 3D) and C#. Passionate about creating immersive 
+          gaming experiences, AR/VR applications, and continuously pushing the boundaries of 
+          interactive entertainment.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <span>🎮</span> View Projects
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span>💬</span> Get In Touch
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="11">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="4">0</div>
+            <div class="stat-label">Platforms</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/hero_avatar.jpg" alt="Md. Habib - Game Developer" class="hero-image">
+          <div class="floating-badge">
+            <span class="badge-icon">🎮</span> Unity 2D/3D
+          </div>
+          <div class="floating-badge">
+            <span class="badge-icon">💻</span> C# Expert
+          </div>
+          <div class="floating-badge">
+            <span class="badge-icon">🥽</span> AR/VR Dev
+          </div>
+          <div class="floating-badge">
+            <span class="badge-icon">🧠</span> ML/AI
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-visual reveal-left">
+        <div class="about-image-container">
+          <img src="assets/images/ar_vr_project.jpg" alt="Habib working on game development">
+        </div>
+        <div class="about-exp-badge">
+          <div class="exp-number">1.5+</div>
+          <div class="exp-label">Years of Experience</div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <div class="section-label">About Me</div>
+        <h3>Game Developer with a passion for creating worlds</h3>
+        <p>
+          I'm a Junior Game Developer at <strong>Join Venture AI</strong>, Aqua Tower, Mohakhali C/A, Dhaka. 
+          B.Sc. graduate in Computer Science & Engineering from Green University with professional 
+          experience building games. My expertise spans across 2D arcade mechanics, interactive 3D 
+          environments, gameplay systems, and AR/VR applications.
+        </p>
+        <p>
+          I believe games are more than just entertainment — they're experiences that connect people, 
+          tell stories, and push technological boundaries. I'm driven by the challenge of crafting 
+          polished, performant, and engaging gaming experiences.
+        </p>
+        <div class="about-details">
+          <div class="about-detail-item">
+            <div class="detail-icon">📧</div>
+            <div class="detail-info">
+              <div class="detail-label">Email</div>
+              <div class="detail-value">habib.lolli47@gmail.com</div>
+            </div>
+          </div>
+          <div class="about-detail-item">
+            <div class="detail-icon">📍</div>
+            <div class="detail-info">
+              <div class="detail-label">Location</div>
+              <div class="detail-value">Dhaka, Bangladesh</div>
+            </div>
+          </div>
+          <div class="about-detail-item">
+            <div class="detail-icon">📞</div>
+            <div class="detail-info">
+              <div class="detail-label">Phone</div>
+              <div class="detail-value">+88 01703 915 854</div>
+            </div>
+          </div>
+          <div class="about-detail-item">
+            <div class="detail-icon">🎓</div>
+            <div class="detail-info">
+              <div class="detail-label">Degree</div>
+              <div class="detail-value">B.Sc. in CSE</div>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary">
+          <span>📄</span> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">My Arsenal</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">
+          Equipped with a diverse range of game development tools and technologies to bring ideas to life.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <!-- Game Development -->
+        <div class="skill-card reveal" style="transition-delay: 0.1s">
+          <div class="skill-card-header">
+            <div class="skill-icon">🎮</div>
+            <h3>Game Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Unity Engine</span>
+            <span class="skill-tag">C# Scripting</span>
+            <span class="skill-tag">Game Physics</span>
+            <span class="skill-tag">2D Mechanics</span>
+            <span class="skill-tag">3D Environments</span>
+            <span class="skill-tag">UI/UX in Games</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Unity Engine (2D & 3D)</span>
+                <span class="skill-bar-percent">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">C# Scripting</span>
+                <span class="skill-bar-percent">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Game Physics & Mechanics</span>
+                <span class="skill-bar-percent">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AR/VR Development -->
+        <div class="skill-card reveal" style="transition-delay: 0.2s">
+          <div class="skill-card-header">
+            <div class="skill-icon">🥽</div>
+            <h3>AR/VR Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Vuforia</span>
+            <span class="skill-tag">ARFoundation</span>
+            <span class="skill-tag">XR Toolkit</span>
+            <span class="skill-tag">Marker-based AR</span>
+            <span class="skill-tag">Markerless AR</span>
+            <span class="skill-tag">Spatial UI</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Vuforia (Marker AR)</span>
+                <span class="skill-bar-percent">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">ARFoundation</span>
+                <span class="skill-bar-percent">70%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">XR Interaction Toolkit</span>
+                <span class="skill-bar-percent">65%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Others -->
+        <div class="skill-card reveal" style="transition-delay: 0.3s">
+          <div class="skill-card-header">
+            <div class="skill-icon">🛠️</div>
+            <h3>Tools & ML</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">Computer Vision</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Git & GitHub</span>
+                <span class="skill-bar-percent">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">TensorFlow / ML</span>
+                <span class="skill-bar-percent">60%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="60"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Computer Vision</span>
+                <span class="skill-bar-percent">55%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="55"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          A showcase of games and interactive applications I've built. Click on any project to see more details.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="2d">2D Games</button>
+        <button class="filter-btn" data-filter="3d">3D Games</button>
+        <button class="filter-btn" data-filter="ar-vr">AR/VR</button>
+        <button class="filter-btn" data-filter="ml">ML/AI</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Retro Aero Fighter -->
+        <div class="project-card reveal" data-category="2d" data-project="retro-aero">
+          <div class="project-card-image">
+            <img src="assets/images/retro_aero_fighter.jpg" alt="Retro Aero Fighter Game">
+            <span class="project-card-category">2D Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Play Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Retro Aero Fighter</h3>
+            <p>A vertical scrolling aircraft shooter optimized for Android with object pooling and dynamic resource management.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 2D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Android</span>
+              <span class="project-tech-tag">Object Pooling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ninja Runner -->
+        <div class="project-card reveal" data-category="2d" data-project="ninja-runner" style="transition-delay: 0.15s">
+          <div class="project-card-image">
+            <img src="assets/images/ninja_runner.jpg" alt="Ninja Runner Game">
+            <span class="project-card-category">2D Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Play Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Ninja Runner</h3>
+            <p>Classic 2D platformer with cross-platform input for PC and mobile, featuring real-time UI updates and win/lose states.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 2D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Cross-Platform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision Drive -->
+        <div class="project-card reveal" data-category="3d" data-project="vision-drive" style="transition-delay: 0.3s">
+          <div class="project-card-image">
+            <img src="assets/images/vision_drive.jpg" alt="Vision Drive Game">
+            <span class="project-card-category">3D Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Play Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Vision Drive</h3>
+            <p>3D traffic simulation game with realistic vehicle physics, obstacle avoidance system, and scoring mechanics.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 3D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Vehicle Physics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AR Object Interaction -->
+        <div class="project-card reveal" data-category="ar-vr" data-project="ar-object" style="transition-delay: 0.15s">
+          <div class="project-card-image">
+            <img src="assets/images/ar_vr_project.jpg" alt="AR Object Interaction App">
+            <span class="project-card-category">AR/VR</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Try Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>AR Object Interaction App</h3>
+            <p>Augmented reality application with real-time object detection and interaction using Vuforia and Unity.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity</span>
+              <span class="project-tech-tag">Vuforia</span>
+              <span class="project-tech-tag">AR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VR Interaction System -->
+        <div class="project-card reveal" data-category="ar-vr" data-project="vr-interaction" style="transition-delay: 0.3s">
+          <div class="project-card-image">
+            <img src="assets/images/ar_vr_project.jpg" alt="VR Interaction System">
+            <span class="project-card-category">AR/VR</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>VR Interaction System</h3>
+            <p>Virtual reality locomotion and object interaction system built with Unity XR Interaction Toolkit.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity XR</span>
+              <span class="project-tech-tag">VR</span>
+              <span class="project-tech-tag">XR Toolkit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AQI Prediction -->
+        <div class="project-card reveal" data-category="ml" data-project="aqi-prediction" style="transition-delay: 0.15s">
+          <div class="project-card-image">
+            <img src="assets/images/vision_drive.jpg" alt="AQI Prediction Thesis">
+            <span class="project-card-category">ML/AI</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="View Paper">📄</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Air Quality Index Prediction</h3>
+            <p>CNN model to estimate Air Quality Index from satellite imagery. B.Sc. thesis project using TensorFlow.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">TensorFlow</span>
+              <span class="project-tech-tag">CNN</span>
+              <span class="project-tech-tag">Python</span>
+              <span class="project-tech-tag">Satellite Imagery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gnomeatic Card Games -->
+        <div class="project-card reveal" data-category="2d" data-project="gnomeatic-cards" style="transition-delay: 0.3s">
+          <div class="project-card-image">
+            <img src="assets/images/gnomeatic_card_game.jpg" alt="Gnomeatic Card Games">
+            <span class="project-card-category">2D Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Play Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Gnomeatic Card Games</h3>
+            <p>A fantasy-themed collectible card game with gnome characters, strategic turn-based mechanics and multiplayer support.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 2D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Card Game</span>
+              <span class="project-tech-tag">Multiplayer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dungeon Escape -->
+        <div class="project-card reveal" data-category="3d" data-project="dungeon-escape" style="transition-delay: 0.15s">
+          <div class="project-card-image">
+            <img src="assets/images/dungeon_escape.jpg" alt="Dungeon Escape Game">
+            <span class="project-card-category">3D Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Play Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Dungeon Escape</h3>
+            <p>A 3D dungeon crawler adventure with procedural level generation, combat mechanics, and treasure hunting.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 3D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Procedural Gen</span>
+              <span class="project-tech-tag">AI Enemies</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Space Survival -->
+        <div class="project-card reveal" data-category="2d" data-project="space-survival" style="transition-delay: 0.3s">
+          <div class="project-card-image">
+            <img src="assets/images/space_survival.jpg" alt="Space Survival Game">
+            <span class="project-card-category">2D Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Play Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Space Survival</h3>
+            <p>A 2D space survival game where you navigate asteroids, collect resources, and survive in deep space with shield mechanics.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 2D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Physics</span>
+              <span class="project-tech-tag">Mobile</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zombie Defense -->
+        <div class="project-card reveal" data-category="3d" data-project="zombie-defense" style="transition-delay: 0.15s">
+          <div class="project-card-image">
+            <img src="assets/images/zombie_defense.jpg" alt="Zombie Defense Game">
+            <span class="project-card-category">3D Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Play Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Zombie Defense</h3>
+            <p>A 3D tower defense game with wave-based zombie attacks, turret placement strategy, and upgrade systems.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 3D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Tower Defense</span>
+              <span class="project-tech-tag">AI Pathfinding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Puzzle Match -->
+        <div class="project-card reveal" data-category="2d" data-project="puzzle-match" style="transition-delay: 0.3s">
+          <div class="project-card-image">
+            <img src="assets/images/puzzle_match.jpg" alt="Puzzle Match Game">
+            <span class="project-card-category">2D Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Play Demo">▶️</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Crystal Match Puzzle</h3>
+            <p>A vibrant match-3 puzzle game with combo systems, power-ups, level progression, and leaderboard integration.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 2D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Casual</span>
+              <span class="project-tech-tag">Mobile</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Milestones</div>
+        <h2 class="section-title">Achievements & Stats</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🎮</div>
+          <div class="achievement-number" data-count="11">0</div>
+          <div class="achievement-label">Projects Built</div>
+        </div>
+        <div class="achievement-card reveal" style="transition-delay: 0.1s">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-number" data-count="15">0</div>
+          <div class="achievement-label">Top 15% Kaggle</div>
+        </div>
+        <div class="achievement-card reveal" style="transition-delay: 0.2s">
+          <div class="achievement-icon">🔧</div>
+          <div class="achievement-number" data-count="10">0</div>
+          <div class="achievement-label">Technologies</div>
+        </div>
+        <div class="achievement-card reveal" style="transition-delay: 0.3s">
+          <div class="achievement-icon">🤝</div>
+          <div class="achievement-number" data-count="5">0</div>
+          <div class="achievement-label">Open Source PRs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Journey</div>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">
+          My professional journey in game development and XR technologies.
+        </p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-card">
+            <div class="timeline-date">2026 — Present</div>
+            <h3>Junior Game Developer</h3>
+            <h4>Join Venture AI</h4>
+            <p>Aqua Tower, 43 Mohakhali C/A, Level 12-13, Dhaka 1212</p>
+            <ul>
+              <li>Developing professional game titles using Unity (2D & 3D) and C#</li>
+              <li>Building gameplay mechanics, UI systems, and game logic</li>
+              <li>Collaborating with cross-functional teams including designers and artists</li>
+              <li>Optimizing game performance for multiple target platforms</li>
+              <li>Implementing game features from concept to production-ready code</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-card">
+            <div class="timeline-date">Nov 2025 — Dec 2025</div>
+            <h3>Industrial Trainee</h3>
+            <h4>Battery Low Interactive Ltd.</h4>
+            <p>Game & XR Developer</p>
+            <ul>
+              <li>Developed AR/VR applications using Unity 3D and C#</li>
+              <li>Implemented marker-based AR with Vuforia and markerless AR using ARFoundation</li>
+              <li>Designed XR interactions including grab systems and spatial UI</li>
+              <li>Collaborated with designers to integrate 3D assets and optimize performance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-card">
+            <div class="timeline-date">2022 — 2026</div>
+            <h3>Self-Directed Projects</h3>
+            <h4>Freelance & Personal</h4>
+            <p>Game Developer & ML Researcher</p>
+            <ul>
+              <li>Built multiple 2D and 3D games using Unity</li>
+              <li>Developed thesis on AQI prediction using CNN</li>
+              <li>Ranked in Top 15% in Kaggle competitions</li>
+              <li>Contributed to ML-related open source repositories</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION SECTION ==================== -->
+  <section class="section" id="education" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Academic Background</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-grid">
+        <div class="education-card reveal" style="transition-delay: 0.1s">
+          <div class="edu-icon">🎓</div>
+          <h3>B.Sc. in Computer Science & Engineering</h3>
+          <div class="edu-institution">Green University, Bangladesh</div>
+          <div class="edu-year">2022 — 2026</div>
+          <span class="edu-result">CGPA: 3.46 / 4.00</span>
+        </div>
+        <div class="education-card reveal" style="transition-delay: 0.2s">
+          <div class="edu-icon">📚</div>
+          <h3>HSC (Science)</h3>
+          <div class="edu-institution">Nakalia Monjur Qader College</div>
+          <div class="edu-year">2017 — 2020</div>
+          <span class="edu-result">GPA: 5.00</span>
+        </div>
+        <div class="education-card reveal" style="transition-delay: 0.3s">
+          <div class="edu-icon">📖</div>
+          <h3>SSC (Science)</h3>
+          <div class="edu-institution">Velayet Hossain Bahumukhi</div>
+          <div class="edu-year">2017</div>
+          <span class="edu-result">GPA: 5.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-info reveal-left">
+        <div>
+          <div class="section-label">Get In Touch</div>
+          <h3>Let's Build Something <span class="gradient-text" style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Epic Together</span></h3>
+          <p>
+            Whether you have a game idea, need a developer for your team, or want to collaborate on an 
+            exciting project — I'd love to hear from you. Let's create something amazing!
+          </p>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-text">
+            <div class="detail-title">Email</div>
+            <div class="detail-content">habib.lolli47@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <div class="detail-title">Phone</div>
+            <div class="detail-content">+88 01703 915 854</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <div class="detail-title">Location</div>
+            <div class="detail-content">Dhaka, Bangladesh</div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" class="social-link" title="GitHub">🐙</a>
+          <a href="https://linkedin.com/" target="_blank" class="social-link" title="LinkedIn">💼</a>
+          <a href="https://kaggle.com/" target="_blank" class="social-link" title="Kaggle">📊</a>
+          <a href="mailto:habib.lolli47@gmail.com" class="social-link" title="Email">✉️</a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal-right" id="contact-form-wrapper">
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" name="subject">
+              <option value="">Select a topic</option>
+              <option value="game-dev">Game Development Project</option>
+              <option value="ar-vr">AR/VR Development</option>
+              <option value="job">Job Opportunity</option>
+              <option value="freelance">Freelance Work</option>
+              <option value="collab">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit-btn" id="form-submit-btn">
+            🚀 Send Message
+          </button>
+        </form>
+        <div class="form-success" id="form-success">
+          <div class="success-icon">✅</div>
+          <h4>Message Sent Successfully!</h4>
+          <p>Thanks for reaching out. I'll get back to you as soon as possible!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">HABIB.DEV</div>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="social-links" style="margin-top: 0;">
+        <a href="https://github.com/" target="_blank" class="social-link" title="GitHub">🐙</a>
+        <a href="https://linkedin.com/" target="_blank" class="social-link" title="LinkedIn">💼</a>
+        <a href="https://kaggle.com/" target="_blank" class="social-link" title="Kaggle">📊</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 Md. Habib. All rights reserved. Built with ❤️ and ☕
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="back-to-top" title="Back to top">⬆</button>
+
+  <!-- ==================== PROJECT MODAL ==================== -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <img id="modal-image" src="" alt="Project">
+        <button class="modal-close" id="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-title"></h2>
+        <div class="modal-category" id="modal-category"></div>
+        <p class="modal-description" id="modal-description"></p>
+        <div class="modal-features">
+          <h4>Key Features</h4>
+          <ul id="modal-features-list"></ul>
+        </div>
+        <h4 style="font-family: var(--font-heading); margin-top: 16px;">Tech Stack</h4>
+        <div class="modal-tech-stack" id="modal-tech-stack"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
