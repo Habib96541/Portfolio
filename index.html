@@ -83,7 +83,7 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <div class="stat-number" data-count="11">0</div>
+            <div class="stat-number" data-count="12">0</div>
             <div class="stat-label">Projects</div>
           </div>
           <div class="stat-item">
@@ -350,6 +350,31 @@
 
       <!-- Projects Grid -->
       <div class="projects-grid" id="projects-grid">
+
+        <!-- No Break -->
+        <div class="project-card reveal" data-category="3d" data-project="no-break">
+          <div class="project-card-image">
+            <img src="assets/images/no_break.jpg" alt="No Break 3D Action Game">
+            <span class="project-card-category">3D Action Game</span>
+            <div class="project-card-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" title="View Details">🔍</button>
+                <button class="overlay-btn" title="Watch Gameplay Video">🎬</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>No Break</h3>
+            <p>High-octane 3D infinite driving game with broken brakes mechanic, dynamic traffic physics, nitro boosts, and obstacle destruction.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Unity 3D</span>
+              <span class="project-tech-tag">C#</span>
+              <span class="project-tech-tag">Vehicle Physics</span>
+              <span class="project-tech-tag">NavMesh AI</span>
+              <span class="project-tech-tag">Shader Graph</span>
+            </div>
+          </div>
+        </div>
 
         <!-- Retro Aero Fighter -->
         <div class="project-card reveal" data-category="2d" data-project="retro-aero">
@@ -860,6 +885,19 @@
         <h2 id="modal-title"></h2>
         <div class="modal-category" id="modal-category"></div>
         <p class="modal-description" id="modal-description"></p>
+        
+        <!-- Media Gallery Screenshots -->
+        <div class="modal-gallery-container" id="modal-gallery-container" style="display: none;">
+          <h4 style="font-family: var(--font-heading); margin: 16px 0 8px; color: var(--color-text);">📸 Screenshots & Media Gallery</h4>
+          <div class="modal-gallery-grid" id="modal-gallery-grid"></div>
+        </div>
+
+        <!-- Video Player Section -->
+        <div class="modal-video-container" id="modal-video-container" style="display: none;">
+          <h4 style="font-family: var(--font-heading); margin: 16px 0 8px; color: var(--color-text);">🎬 Project Video Preview</h4>
+          <div class="modal-video-wrapper" id="modal-video-wrapper"></div>
+        </div>
+
         <div class="modal-features">
           <h4>Key Features</h4>
           <ul id="modal-features-list"></ul>

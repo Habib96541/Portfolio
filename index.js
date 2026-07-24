@@ -340,6 +340,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // 11. PROJECT MODAL
   // ==========================================
   const projectData = {
+    'no-break': {
+      title: 'No Break',
+      category: '3D Endless Action Driving',
+      image: 'assets/images/no_break.jpg',
+      description: 'A high-octane 3D infinite driving game built in Unity where the car brakes are completely destroyed! Drive at relentless speed through dynamic city traffic, dodge heavy obstacles, trigger nitro boost combos, and survive against escalating speed challenges in an intense arcade environment.',
+      features: [
+        'Disabled Brakes Mechanics — Continuous acceleration forcing high-speed tactical reaction',
+        'Dynamic Traffic & Obstacle Spawning with NavMesh AI and physics collisions',
+        'Nitro Boost & Heat Management System with explosive FX',
+        'Near-Miss Dodge Combo System with dynamic camera shake & UI audio cues',
+        'Custom Vehicle Controller with realistic wheel friction & drifting physics',
+        'Multiple Environment Tracks & Custom Garage Upgrades'
+      ],
+      tech: ['Unity 3D', 'C#', 'Vehicle Physics', 'NavMesh AI', 'Shader Graph', 'Object Pooling', 'Mobile & PC'],
+      gallery: [
+        'assets/images/no_break_ss1.jpg',
+        'assets/images/no_break_ss2.jpg',
+        'assets/images/no_break_ss3.jpg'
+      ],
+      video: {
+        title: 'No Break — Official Gameplay Showcase Trailer',
+        thumbnail: 'assets/images/no_break_ss1.jpg',
+        url: 'assets/videos/no_break_preview.mp4'
+      }
+    },
     'retro-aero': {
       title: 'Retro Aero Fighter',
       category: '2D Arcade Shooter',
@@ -521,6 +546,38 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('modal-title').textContent = data.title;
       document.getElementById('modal-category').textContent = data.category;
       document.getElementById('modal-description').textContent = data.description;
+
+      // Render Screenshots Gallery
+      const galleryContainer = document.getElementById('modal-gallery-container');
+      const galleryGrid = document.getElementById('modal-gallery-grid');
+      if (galleryContainer && galleryGrid) {
+        if (data.gallery && data.gallery.length > 0) {
+          galleryContainer.style.display = 'block';
+          galleryGrid.innerHTML = data.gallery.map(img => 
+            `<img src="${img}" class="modal-gallery-thumb" alt="Screenshot" onclick="document.getElementById('modal-image').src='${img}'">`
+          ).join('');
+        } else {
+          galleryContainer.style.display = 'none';
+        }
+      }
+
+      // Render Video Preview Player
+      const videoContainer = document.getElementById('modal-video-container');
+      const videoWrapper = document.getElementById('modal-video-wrapper');
+      if (videoContainer && videoWrapper) {
+        if (data.video) {
+          videoContainer.style.display = 'block';
+          videoWrapper.innerHTML = `
+            <div class="video-placeholder" style="background-image: linear-gradient(135deg, rgba(15,15,30,0.85), rgba(5,5,15,0.95)), url('${data.video.thumbnail}'); background-size: cover; background-position: center;">
+              <div class="video-placeholder-play" onclick="this.parentElement.innerHTML='<video controls autoplay style=\\'width:100%;height:100%;object-fit:cover;\\'><source src=\\'${data.video.url}\\' type=\\'video/mp4\\'>Your browser does not support HTML5 video.</video>'">▶</div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 4px; color: #fff;">${data.video.title}</h3>
+              <p style="font-size: 0.85rem; opacity: 0.8; color: #cbd5e1;">Click button to play gameplay trailer preview</p>
+            </div>
+          `;
+        } else {
+          videoContainer.style.display = 'none';
+        }
+      }
 
       const featuresList = document.getElementById('modal-features-list');
       featuresList.innerHTML = data.features.map(f => `<li>${f}</li>`).join('');
