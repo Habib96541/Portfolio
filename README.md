@@ -43,4 +43,5 @@ Live Website: **[https://habib96541.github.io/Portfolio/](https://habib96541.git
 - **Email**: habib.lolli47@gmail.com
 - **Phone**: +88 01703 915 854
 - **Location**: Dhaka, Bangladesh
+- **LinkedIn**: [linkedin.com/in/habibur-rahman-habib-634878252](https://www.linkedin.com/in/habibur-rahman-habib-634878252)
 - **GitHub**: [github.com/Habib96541](https://github.com/Habib96541)
