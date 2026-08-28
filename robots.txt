@@ -1,0 +1,23 @@
+﻿User-agent: *
+Allow: /
+
+# Allow Major Search Engines & AI Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://habib96541.github.io/Portfolio/sitemap.xml

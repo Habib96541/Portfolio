@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://habib96541.github.io/Portfolio/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://habib96541.github.io/Portfolio/assets/images/hero_avatar.jpg</image:loc>
+      <image:title>Md. Habibur Rahman Habib - Top Game Developer in Bangladesh</image:title>
+      <image:caption>Portrait of Md. Habibur Rahman Habib, Game Developer at Joint Venture AI (Betopia Game Team) in Dhaka, Bangladesh</image:caption>
+    </image:image>
+  </url>
+</urlset>
