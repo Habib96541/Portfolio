@@ -2,7 +2,8 @@
 
 ![Portfolio Preview](assets/images/hero_avatar.jpg)
 
-Live Website: **[https://habib96541.github.io/Portfolio/](https://habib96541.github.io/Portfolio/)**
+Live Website (GitHub Pages): **[https://habib96541.github.io/Portfolio/](https://habib96541.github.io/Portfolio/)**  
+Live Website (Vercel): **[https://vercel.com/new](https://vercel.com/new)** (Connect `Habib96541/Portfolio`)
 
 ---
 
