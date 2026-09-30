@@ -344,7 +344,13 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'No Break',
       category: '3D Endless Action Driving',
       image: 'assets/images/no_break.jpg',
-      description: 'A high-octane 3D infinite driving game built in Unity where the car brakes are completely destroyed! Drive at relentless speed through dynamic city traffic, dodge heavy obstacles, trigger nitro boost combos, and survive against escalating speed challenges in an intense arcade environment.',
+      description: 'An adrenaline-fueled 3D endless driving game built in Unity where player vehicle brakes have failed. Weave through dynamic traffic, trigger explosive nitro boosts, destroy obstacles, and collect coins.',
+      gallery: [
+        'assets/images/no_break.jpg',
+        'assets/images/no_break_ss1.jpg',
+        'assets/images/no_break_ss2.jpg',
+        'assets/images/no_break_ss3.jpg'
+      ],
       features: [
         'Disabled Brakes Mechanics — Continuous acceleration forcing high-speed tactical reaction',
         'Dynamic Traffic & Obstacle Spawning with NavMesh AI and physics collisions',
@@ -378,7 +384,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'Full Source Code & Final Delivery Build available on Google Drive'
       ],
       tech: ['Unity 3D', 'C#', 'Horror/Mystery', 'Puzzle Systems', 'Lighting & Audio'],
-      driveUrl: 'https://drive.google.com/drive/folders/1twKp_57n9e3aPhSypejhW7Udpkb7f4Gy?usp=sharing',
+      gallery: [
+        'assets/images/why_me_ss1.png',
+        'assets/images/why_me_ss2.png',
+        'assets/images/why_me_ss3.png',
+        'assets/images/why_me_ss4.png'
+      ],
+      driveUrl: 'https://drive.google.com/drive/folders/1twKp_57n9e3aPhSypejhW7Udpkb7f4Gy?usp=sharing'
       links: [
         { label: '📦 Full Source Code & Delivery Build (.APK/Zip)', url: 'https://drive.google.com/drive/folders/1twKp_57n9e3aPhSypejhW7Udpkb7f4Gy?usp=sharing', icon: '📁' }
       ]
@@ -396,7 +408,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'Full Source Code & Build available on Google Drive'
       ],
       tech: ['Unity 3D', 'C#', 'Cyberpunk', 'Grid Tactics', 'AI Stealth'],
-      driveUrl: 'https://drive.google.com/drive/folders/1QxVXnXm2tqiJsobUccOtALAWBoUHmzu0?usp=sharing',
+      gallery: [
+        'assets/images/shadow_grid_ss1.png',
+        'assets/images/shadow_grid_ss2.png',
+        'assets/images/shadow_grid_ss3.png',
+        'assets/images/shadow_grid_ss4.png'
+      ],
+      driveUrl: 'https://drive.google.com/drive/folders/1QxVXnXm2tqiJsobUccOtALAWBoUHmzu0?usp=sharing'
       links: [
         { label: '📦 Full Source Code & Build (.APK/Zip)', url: 'https://drive.google.com/drive/folders/1QxVXnXm2tqiJsobUccOtALAWBoUHmzu0?usp=sharing', icon: '📁' }
       ]
@@ -414,7 +432,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'Full Source Code & Delivery Build available on Google Drive'
       ],
       tech: ['Unity 3D', 'C#', 'Sports Physics', 'Arcade AI', 'Particle Systems'],
-      driveUrl: 'https://drive.google.com/drive/folders/16_jZKs9s5U6-Esi3QiF6QM3uHGwFKlLI?usp=sharing',
+      gallery: [
+        'assets/images/king_ping_pong_ss1.png',
+        'assets/images/king_ping_pong_ss2.png',
+        'assets/images/king_ping_pong_ss3.png',
+        'assets/images/king_ping_pong_ss4.png'
+      ],
+      driveUrl: 'https://drive.google.com/drive/folders/16_jZKs9s5U6-Esi3QiF6QM3uHGwFKlLI?usp=sharing'
       links: [
         { label: '📦 Full Source Code & Delivery Build (.APK/Zip)', url: 'https://drive.google.com/drive/folders/16_jZKs9s5U6-Esi3QiF6QM3uHGwFKlLI?usp=sharing', icon: '📁' }
       ]
