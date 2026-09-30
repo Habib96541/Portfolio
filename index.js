@@ -585,6 +585,28 @@ document.addEventListener('DOMContentLoaded', () => {
       const techStack = document.getElementById('modal-tech-stack');
       techStack.innerHTML = data.tech.map(t => `<span class="project-tech-tag">${t}</span>`).join('');
 
+      // Render External Links / Drive / Source
+      const linksContainer = document.getElementById('modal-links-container');
+      const linksGrid = document.getElementById('modal-links-grid');
+      if (linksContainer && linksGrid) {
+        if (data.links && data.links.length > 0) {
+          linksContainer.style.display = 'block';
+          linksGrid.innerHTML = data.links.map(l => 
+            `<a href="${l.url}" target="_blank" class="btn-primary" style="padding: 10px 20px; font-size: 0.88rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+              <span>${l.icon || '📁'}</span> ${l.label}
+            </a>`
+          ).join('');
+        } else if (data.driveUrl) {
+          linksContainer.style.display = 'block';
+          linksGrid.innerHTML = `
+            <a href="${data.driveUrl}" target="_blank" class="btn-primary" style="padding: 10px 20px; font-size: 0.88rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+              <span>📦</span> Full Source Code & Android Build (.APK)
+            </a>`;
+        } else {
+          linksContainer.style.display = 'none';
+        }
+      }
+
       modalOverlay.classList.add('active');
       document.body.style.overflow = 'hidden';
     });

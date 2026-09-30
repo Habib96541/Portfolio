@@ -14,8 +14,10 @@ Live Website: **[https://habib96541.github.io/Portfolio/](https://habib96541.git
 
 ## 🚀 Featured Projects (12+)
 
-1. **No Break** — 3D Endless Action Driving game built in Unity with disabled brakes mechanics, dynamic traffic, nitro boost combos, and dynamic obstacle destruction.
-2. **Retro Aero Fighter** — 2D Vertical scrolling arcade shooter optimized for Android with Object Pooling.
+1. **Retro Aero Fighter** — 2D Vertical scrolling aircraft shooter optimized for Android devices with Object Pooling, dual firing modes (Auto Fire / Manual Fire), fuel system, and reward ads.
+   - 📦 **[Full Source Code & Android Build (.APK)](https://drive.google.com/drive/folders/10pALE4_YrOIkIJhc73QHukRZDhaTGKq2)**
+   - 📸 Screenshots: `assets/images/retro_aero_menu.png`, `assets/images/retro_aero_gameplay.png`, `assets/images/retro_aero_gameover.png`
+2. **No Break** — 3D Endless Action Driving game built in Unity with disabled brakes mechanics, dynamic traffic, nitro boost combos, and dynamic obstacle destruction.
 3. **Ninja Runner** — Classic 2D platformer with cross-platform controls.
 4. **Vision Drive** — 3D traffic simulation game with realistic vehicle physics and AI obstacles.
 5. **AR Object Interaction App** — Real-time AR object detection built with Unity & Vuforia.
