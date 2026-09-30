@@ -365,6 +365,60 @@ document.addEventListener('DOMContentLoaded', () => {
         url: 'assets/videos/no_break_preview.mp4'
       }
     },
+        'why-me': {
+      title: 'Why Me',
+      category: '3D Mystery Horror Adventure',
+      image: 'assets/images/why_me.jpg',
+      description: 'An atmospheric first-person 3D mystery horror puzzle adventure game developed in Unity 3D. Players explore dark corridors, inspect glowing clues, solve intricate lock and gear puzzles, and uncover dark secrets.',
+      features: [
+        'Atmospheric 3D first-person mystery horror exploration',
+        'Interactive clue inspection and inventory item management',
+        'Intricate lock mechanisms and environmental puzzle solving',
+        'Dynamic torchlight lighting and sound design',
+        'Full Source Code & Final Delivery Build available on Google Drive'
+      ],
+      tech: ['Unity 3D', 'C#', 'Horror/Mystery', 'Puzzle Systems', 'Lighting & Audio'],
+      driveUrl: 'https://drive.google.com/drive/folders/1twKp_57n9e3aPhSypejhW7Udpkb7f4Gy?usp=sharing',
+      links: [
+        { label: '📦 Full Source Code & Delivery Build (.APK/Zip)', url: 'https://drive.google.com/drive/folders/1twKp_57n9e3aPhSypejhW7Udpkb7f4Gy?usp=sharing', icon: '📁' }
+      ]
+    },
+    'shadow-grid': {
+      title: 'Shadow Grid',
+      category: '3D Tactical Cyberpunk Stealth',
+      image: 'assets/images/shadow_grid.jpg',
+      description: 'A 3D sci-fi cyberpunk stealth grid action game where players navigate neon security tiles, hack security drones, deploy decoys/EMP abilities, and execute stealth tactical maneuvers.',
+      features: [
+        'Hexagonal & square grid tactical movement system',
+        'Cyberpunk stealth mechanics with vision cones and alarm triggers',
+        'Special abilities: Stealth Camo, Hacking, Decoy, and EMP Blast',
+        'Turn-based & real-time tactical action modes',
+        'Full Source Code & Build available on Google Drive'
+      ],
+      tech: ['Unity 3D', 'C#', 'Cyberpunk', 'Grid Tactics', 'AI Stealth'],
+      driveUrl: 'https://drive.google.com/drive/folders/1QxVXnXm2tqiJsobUccOtALAWBoUHmzu0?usp=sharing',
+      links: [
+        { label: '📦 Full Source Code & Build (.APK/Zip)', url: 'https://drive.google.com/drive/folders/1QxVXnXm2tqiJsobUccOtALAWBoUHmzu0?usp=sharing', icon: '📁' }
+      ]
+    },
+    'king-ping-pong': {
+      title: 'King Ping Pong',
+      category: '3D Arcade Table Tennis',
+      image: 'assets/images/king_ping_pong.jpg',
+      description: 'A 3D arcade table tennis & ping-pong action game featuring high-speed paddle physics, AI opponent behavior, particle trail effects, dynamic camera angles, and arcade tournament matches.',
+      features: [
+        'Realistic table tennis ball & paddle physics system',
+        'AI opponent behavior scaling with multiple difficulty levels',
+        'Vibrant neon arcade stadium with dynamic spectator cameras',
+        'Particle trail effects on smash shots and ball collisions',
+        'Full Source Code & Delivery Build available on Google Drive'
+      ],
+      tech: ['Unity 3D', 'C#', 'Sports Physics', 'Arcade AI', 'Particle Systems'],
+      driveUrl: 'https://drive.google.com/drive/folders/16_jZKs9s5U6-Esi3QiF6QM3uHGwFKlLI?usp=sharing',
+      links: [
+        { label: '📦 Full Source Code & Delivery Build (.APK/Zip)', url: 'https://drive.google.com/drive/folders/16_jZKs9s5U6-Esi3QiF6QM3uHGwFKlLI?usp=sharing', icon: '📁' }
+      ]
+    },
     'retro-aero': {
       title: 'Retro Aero Fighter',
       category: '2D Arcade Shooter',
