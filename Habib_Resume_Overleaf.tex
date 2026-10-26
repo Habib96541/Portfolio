@@ -1,0 +1,205 @@
+% !TeX spellcheck = en_GB
+% !TeX program = pdflatex
+
+\documentclass[11pt, a4paper]{article} 
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25]{microtype}  
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+\setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 5mm}
+
+\usepackage[scaled]{helvet}  
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{cvblue}{HTML}{304263}
+\definecolor{linkaccent}{HTML}{7FE5D9}
+
+%%%%%%% COMMANDS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}} 
+\newcommand{\is}{\par\vskip.4ex plus .3ex} 
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{2.2ex}\textsc{\textbf{#1}}\par%
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.5ex}}
+\newcommand{\headright}[1]{\vspace*{2ex}\textsc{\Large\color{cvblue}#1}\par%
+     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+\begin{minipage}[t]{0.35\textwidth}
+\colorbox{cvblue}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
+
+\vspace{-.2ex} 
+\colorbox{cvblue!90}{\color{white}
+\kern0.08\textwidth
+\begin{minipage}[t]{0.84\textwidth}
+\raggedright
+\vspace*{1ex}
+
+\Large Md. \textbf{\textsc{Habib}} \normalsize 
+
+\null\hfill\includegraphics[width=0.55\textwidth]{1.png}\hfill\null
+
+\vspace*{1.2ex} 
+
+\headleft{Profile}
+\begin{minipage}{\linewidth}
+\justifying\small
+\textbf{Game Developer} at \textbf{Join Venture AI} with a B.Sc. in CSE. Experienced in developing commercial 2D/3D games, vehicle physics, and AR/VR systems using \textbf{Unity} and \textbf{C\#}. Proven focus on 60+ FPS mobile performance, object pooling, and clean architecture.
+\end{minipage}
+
+\headleft{Contact \& Links}
+\small 
+\textbf{Portfolio (Live):} \\
+\href{https://habib96541.github.io/Portfolio/}{\color{linkaccent}\textbf{habib96541.github.io/Portfolio}} \is
+Email: \href{mailto:habib.lolli47@gmail.com}{\color{white}habib.lolli47@gmail.com} \\
+Phone: +88 01703 915 854 \\
+Location: Dhaka, Bangladesh \is
+GitHub: \href{https://github.com/Habib96541}{\color{linkaccent}github.com/Habib96541} \\
+LinkedIn: \href{https://www.linkedin.com/in/habibur-rahman-habib-634878252}{\color{linkaccent}linkedin.com/in/habib} \\
+\normalsize
+
+\headleft{Technical Skills}
+
+\textbf{Game Development:}
+\begin{itemize}
+\item Unity Engine (2D \& 3D)
+\item C\# Scripting \& SOLID
+\item Game Physics \& Mechanics
+\item Object Pooling \& Optimization
+\item NavMesh AI Pathfinding
+\item UI/UX Systems \& Shader Graph
+\end{itemize}
+
+\textbf{AR/VR Development:}
+\begin{itemize}
+\item Vuforia (Marker-based AR)
+\item ARFoundation (Markerless AR)
+\item Unity XR Interaction Toolkit
+\item Spatial Canvas UI \& Locomotion
+\end{itemize}
+
+\textbf{Tools \& Workflow:}
+\begin{itemize}
+\item Git, GitHub, Version Control
+\item Unity Profiler, URP
+\item Visual Studio / VS Code
+\end{itemize}
+
+\textbf{Machine Learning (Supporting):}
+\begin{itemize}
+\item TensorFlow, CNN, OpenCV
+\item Computer Vision Basics
+\end{itemize}
+
+\headleft{Languages}
+\begin{itemize}
+\item Bengali (Native)
+\item English (Professional)
+\end{itemize}
+
+\vspace*{1.5ex}
+
+\end{minipage}
+\kern0.08\textwidth
+}
+\end{minipage}
+\hskip2em
+\begin{minipage}[t]{0.58\textwidth}
+\setlength{\parskip}{0.6ex}
+
+\vspace{1.5ex}
+
+\headright{Experience}
+
+\textsc{Game Developer} at \textit{Join Venture AI} \dates{2026--Present} \\
+\smaller{Developing core gameplay mechanics, player controllers, and physics in Unity (2D/3D).} \\
+\smaller{Architecting modular C\# state machines and event-driven systems for commercial games.} \\
+\smaller{Profiling memory, draw calls, and GC allocations to ensure stable 60+ FPS.}
+
+\is
+
+\textsc{Industrial Trainee (Game \& XR)} at \textit{Battery Low Interactive} \dates{Nov 2025--Dec 2025} \\
+\smaller{Engineered AR/VR applications using Unity 3D, C\#, Vuforia, and ARFoundation.} \\
+\smaller{Designed XR interactions including 3D hand grab mechanics, locomotion, and spatial UI.} \\
+\smaller{Collaborated with 3D artists to optimize asset polycounts and reduce draw calls.}
+
+\is
+
+\headright{Featured Projects}
+
+\textsc{No Break (3D Endless Action Driving)} \dates{Unity 3D, C\#} \\
+\smaller{Developed 3D infinite driving game with broken-brakes mechanic and obstacle destruction.} \\
+\smaller{Implemented custom vehicle wheel physics, nitro boost combos, and NavMesh AI traffic.}
+
+\is
+
+\textsc{Retro Aero Fighter (2D Arcade Shooter)} \dates{Unity 2D, C\#, Android} \\
+\smaller{Built vertical scrolling arcade shooter with dynamic wave spawning for mobile Android.} \\
+\smaller{Implemented high-performance Object Pooling for projectiles, eliminating GC spikes.}
+
+\is
+
+\textsc{Vision Drive (3D Traffic Simulation)} \dates{Unity 3D, C\#} \\
+\smaller{Engineered 3D traffic simulator with realistic vehicle physics, steering, and suspension.} \\
+\smaller{Implemented obstacle avoidance systems, autonomous traffic flow, and scoring logic.}
+
+\is
+
+\textsc{AR/VR Spatial Systems} \dates{Vuforia, ARFoundation, XR Toolkit} \\
+\smaller{Created real-time AR object tracking and spatial manipulation applications in Unity.} \\
+\smaller{Engineered VR locomotion, interactive grab mechanics, and spatial canvas UI.}
+
+\is
+
+\textsc{Ninja Runner (2D Platformer)} \dates{Unity 2D, C\#} \\
+\smaller{Built classic 2D platformer with cross-platform controls for PC and mobile touch.} \\
+\smaller{Programmed real-time UI coin counters, responsive state machines, and win/lose states.}
+
+\is
+
+\textsc{Air Quality Index Prediction (Thesis)} \dates{TensorFlow, CNN, Python} \\
+\smaller{Developed and trained CNN model in TensorFlow to estimate AQI from satellite imagery.} \\
+\smaller{Preprocessed multispectral image datasets using OpenCV with high accuracy.}
+
+\is
+
+\headright{Education}
+
+\textsc{B.Sc. in Computer Science \& Engineering} \dates{2022--2026} \\
+\textit{Green University of Bangladesh} \hfill \textbf{CGPA: 3.46 / 4.00}
+
+\is
+
+\textsc{Higher Secondary Certificate (HSC) -- Science} \dates{2017--2020} \\
+\textit{Nakalia Monjur Qader College} \hfill \textbf{GPA: 5.00 / 5.00}
+
+\is
+
+\textsc{Secondary School Certificate (SSC) -- Science} \dates{2017} \\
+\textit{Velayet Hossain Bahumukhi High School} \hfill \textbf{GPA: 5.00 / 5.00}
+
+\is
+
+\headright{Achievements \& Portfolio}
+
+\textsc{Live Portfolio:} \href{https://habib96541.github.io/Portfolio/}{\textbf{habib96541.github.io/Portfolio}} \\
+\smaller{Built and showcased 12+ games, 3D simulations, and interactive AR/VR systems.} \\
+\smaller{Ranked in Top 15\% in Kaggle Machine Learning competitions; active open-source contributor.}
+
+\end{minipage}
+
+\end{document}

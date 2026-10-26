@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Md. Habib
+% Based on: Jake Gutierrez / Modern ATS-friendly LaTeX Template
+% License : MIT
+%-------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Md. Habib} \\ \vspace{4pt}
+    \small \textbf{Game Developer} $|$ \textbf{Unity (2D/3D) \& XR Specialist} \\ \vspace{3pt}
+    \small 
+    \faMapMarker* \ Dhaka, Bangladesh \ $|$ 
+    \faPhone \ +88 01703 915 854 \ $|$ 
+    \faEnvelope \ \href{mailto:habib.lolli47@gmail.com}{\underline{habib.lolli47@gmail.com}} \\ \vspace{2pt}
+    \faLinkedin \ \href{https://www.linkedin.com/in/habibur-rahman-habib-634878252}{\underline{linkedin.com/in/habibur-rahman-habib}} \ $|$
+    \faGithub \ \href{https://github.com/Habib96541}{\underline{github.com/Habib96541}} \ $|$
+    \faGlobe \ \href{https://habib96541.github.io/Portfolio/}{\underline{habib96541.github.io/Portfolio}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+Dynamic and results-driven \textbf{Game Developer} with proven experience in architecting interactive 2D/3D commercial games and immersive AR/VR applications. Currently developing game mechanics at \textbf{Join Venture AI}. Proficient in \textbf{Unity}, \textbf{C\#}, advanced physics simulation, NavMesh AI, object pooling, and cross-platform mobile optimization. Backed by a strong Computer Science foundation with a B.Sc. in CSE.
+}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Join Venture AI}{Dhaka, Bangladesh}
+      {Game Developer}{2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineer core gameplay mechanics, player controller state machines, and dynamic physics simulations for commercial games in Unity (2D \& 3D).}
+        \resumeItem{Architect clean, modular, and maintainable C\# systems following SOLID principles and event-driven architecture.}
+        \resumeItem{Build responsive gameplay UI, audio managers, particle effects, and animation state transitions.}
+        \resumeItem{Profile runtime performance (CPU/GPU, draw calls, garbage collection) to maintain smooth 60+ FPS execution across target platforms.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Battery Low Interactive Ltd.}{Dhaka, Bangladesh}
+      {Industrial Trainee -- Game \& XR Developer}{Nov 2025 -- Dec 2025}
+      \resumeItemListStart
+        \resumeItem{Built interactive Augmented Reality (AR) and Virtual Reality (VR) applications using Unity 3D, C\#, and Vuforia.}
+        \resumeItem{Implemented marker-based AR object recognition and markerless spatial tracking using ARFoundation.}
+        \resumeItem{Engineered VR locomotion, 3D hand grab mechanics, and spatial canvas UI using Unity XR Interaction Toolkit.}
+        \resumeItem{Collaborated with 3D modelers to optimize draw calls, asset poly-counts, and custom shader performance.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Key Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{No Break} $|$ \emph{Unity 3D, C\#, NavMesh AI, Vehicle Physics, Shader Graph}}{Unity 3D}
+          \resumeItemListStart
+            \resumeItem{Created an endless 3D action driving game with a disabled-brakes core mechanic, dynamic traffic spawning, and obstacle destruction.}
+            \resumeItem{Implemented custom vehicle wheel-collider physics, nitro boost combo systems, and AI vehicle pathfinding.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Retro Aero Fighter} $|$ \emph{Unity 2D, C\#, Android, Object Pooling, Sprite Animation}}{Unity 2D}
+          \resumeItemListStart
+            \resumeItem{Developed a vertical scrolling arcade shooter optimized for mobile Android with custom enemy wave generation.}
+            \resumeItem{Utilized high-performance \textbf{Object Pooling} for bullets and particles to achieve zero garbage collection spikes.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{AR/VR Spatial Interaction Systems} $|$ \emph{Unity XR Toolkit, Vuforia, ARFoundation, C\#}}{AR / VR}
+          \resumeItemListStart
+            \resumeItem{Engineered real-time AR object tracking and spatial manipulation apps with Vuforia and ARFoundation.}
+            \resumeItem{Designed VR locomotion, grab interaction mechanics, and spatial UI systems utilizing Unity XR Interaction Toolkit.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Air Quality Index Prediction (Thesis)} $|$ \emph{TensorFlow, CNN, Python, Computer Vision, OpenCV}}{ML / AI}
+          \resumeItemListStart
+            \resumeItem{Built and trained a Convolutional Neural Network (CNN) in TensorFlow to predict Air Quality Index (AQI) from satellite imagery.}
+            \resumeItem{Preprocessed multispectral image datasets using OpenCV and achieved high classification accuracy.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Dungeon Escape \& Zombie Defense} $|$ \emph{Unity 3D, C\#, Procedural Generation, NavMesh AI}}{Unity 3D}
+          \resumeItemListStart
+            \resumeItem{Constructed procedural 3D dungeon crawler with real-time combat and tower defense with wave spawning \& NavMesh AI.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Game Engines \& Scripting:}{ Unity Engine (2D \& 3D), C\#, Python, C++, HTML5, CSS3, JavaScript} \\
+     \textbf{AR / VR \& XR:}{ Vuforia, ARFoundation, Unity XR Interaction Toolkit, Spatial UI, Marker/Markerless Tracking} \\
+     \textbf{Game Systems \& Mechanics:}{ Rigidbody \& Vehicle Physics, Object Pooling, NavMesh AI Pathfinding, State Machines, Animation Controllers, Shader Graph} \\
+     \textbf{Tools, ML \& Version Control:}{ Git, GitHub, Visual Studio, VS Code, TensorFlow, OpenCV, Unity Profiler, URP (Universal Render Pipeline)}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Green University of Bangladesh}{Dhaka, Bangladesh}
+      {Bachelor of Science in Computer Science \& Engineering (B.Sc. CSE) --- \textbf{CGPA: 3.46 / 4.00}}{2022 -- 2026}
+    \resumeSubheading
+      {Nakalia Monjur Qader College}{Pabna, Bangladesh}
+      {Higher Secondary Certificate (HSC) --- Science --- \textbf{GPA: 5.00 / 5.00}}{2017 -- 2020}
+    \resumeSubheading
+      {Velayet Hossain Bahumukhi High School}{Dhaka, Bangladesh}
+      {Secondary School Certificate (SSC) --- Science --- \textbf{GPA: 5.00 / 5.00}}{2017}
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Milestones}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Portfolio Showcase:}{ Successfully engineered and demonstrated 12+ independent and commercial games/simulations.} \\
+     \textbf{Competitive Machine Learning:}{ Ranked in the \textbf{Top 15\%} in Kaggle Machine Learning Competitions.} \\
+     \textbf{Open Source Collaboration:}{ Contributed to open-source developer tooling and community game repositories.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
